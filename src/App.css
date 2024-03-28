@@ -1,0 +1,68 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.button-to-do-list{
+    color: white;
+}
+
+.to-do-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.to-do-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #444; /* Bordure plus sombre */
+    border-radius: 5px;
+    background-color: #222; /* Fond de tâche */
+}
+
+.to-do-task button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: #333; /* Boutons */
+}
+
+.to-do-task button:hover {
+    background-color: #444; /* Couleur de survol */
+    border-color: #646cff;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.to-do-task input[type="text"] {
+    background-color: #333; /* Champ de texte */
+    color: #fff; /* Texte dans le champ */
+    border: 1px solid #444; /* Bordure */
+    border-radius: 5px;
+    padding: 0.5em;
+    margin-right: 1em;
+}
+
+.calendar-popup {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #222; /* Fond de la pop-up */
+    border: 1px solid #444; /* Bordure */
+    border-radius: 5px;
+    padding: 1em;
+    z-index: 1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Ombre */
+    align-items: center;
+}
